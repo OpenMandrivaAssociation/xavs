@@ -5,11 +5,12 @@
 Summary:	Audio Video Standard of China
 Name:		xavs
 Version:	0.1.55
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Video
 URL:		http://xavs.sourceforge.net/
 Source0:	%{name}-%{version}.tar.xz
+Patch0:		xavs-0.1.55-dont-strip-symbols.patch
 
 %description
 AVS is the Audio Video Standard of China.  This project aims to
@@ -34,6 +35,7 @@ libxavs.
 
 %prep
 %setup -q
+%patch0 -p1 -b .nostrip~
 
 %build
 CFLAGS="%{optflags} -Ofast" \
@@ -56,4 +58,3 @@ CFLAGS="%{optflags} -Ofast" \
 %{_libdir}/libxavs.a
 %{_libdir}/libxavs.so
 %{_libdir}/pkgconfig/xavs.pc
-
