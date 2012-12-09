@@ -58,3 +58,20 @@ CFLAGS="%{optflags} -Ofast" \
 %{_libdir}/libxavs.a
 %{_libdir}/libxavs.so
 %{_libdir}/pkgconfig/xavs.pc
+
+
+%changelog
+* Thu Nov 24 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.1.55-2
++ Revision: 733114
+- don't strip symbols during build (P0)
+
+* Thu Nov 24 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.1.55-1
++ Revision: 733097
+- imported package xavs
+
+
+* Thu Nov 24 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.1.55-1
+- initial Mandriva package
+
+* Mon Mar 14 2011 Axel Thimm <Axel.Thimm@ATrpms.net> - 0.1.51-2
+- Initial build.
