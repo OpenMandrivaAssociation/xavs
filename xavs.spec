@@ -5,7 +5,7 @@
 Summary:	Audio Video Standard of China
 Name:		xavs
 Version:	0.1.55
-Release:	15
+Release:	16
 License:	GPLv2+
 Group:		Video
 URL:		http://xavs.sourceforge.net/
