@@ -38,8 +38,8 @@ libxavs.
 %patch0 -p1 -b .nostrip~
 
 %build
-CFLAGS="%{optflags} -Ofast" \
-%configure2_5x	--enable-shared \
+CFLAGS="%{optflags} -Ofast -fPIC" \
+%configure	--enable-shared \
 		--disable-asm
 # enabling asm code breaks build
 
