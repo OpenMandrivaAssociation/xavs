@@ -8,7 +8,7 @@ Version:	0.1.55
 Release:	19
 License:	GPLv2+
 Group:		Video
-URL:		http://xavs.sourceforge.net/
+URL:		https://xavs.sourceforge.net/
 Source0:	%{name}-%{version}.tar.xz
 Patch0:		xavs-0.1.55-dont-strip-symbols.patch
 
