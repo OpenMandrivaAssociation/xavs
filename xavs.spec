@@ -12,6 +12,11 @@ URL:		https://xavs.sourceforge.net/
 Source0:	%{name}-%{version}.tar.xz
 Patch0:		xavs-0.1.55-dont-strip-symbols.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 AVS is the Audio Video Standard of China.  This project aims to
 implement high quality AVS encoder and decoder.
